@@ -1,0 +1,12 @@
+{
+    "michaleclipse_datacarrierscatalog_datacarrier": {
+        "column": {
+            "dc_id": true,
+            "name": true,
+            "type": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
