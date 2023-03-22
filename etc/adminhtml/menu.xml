@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MichalEclipse_DatacarriersCatalog::content_elements"
+             title="Datacarriers Catalog"
+             translate="title"
+             module="MichalEclipse_DatacarriersCatalog"
+             sortOrder="10"
+             parent="Magento_Backend::content"
+             resource="Magento_Backend::admin"/>
+        <add id="MichalEclipse_DatacarriersCatalog::datacarrier"
+             title="Datacarriers"
+             translate="title"
+             module="MichalEclipse_DatacarriersCatalog"
+             sortOrder="0"
+             parent="MichalEclipse_DatacarriersCatalog::content_elements"
+             action="michaleclipse_datacarrierscatalog/datacarrier"
+             resource="Magento_Backend::admin"/>
+    </menu>
+</config>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="michaleclipse_datacarrierscatalog_datacarrier_listing_data_source" xsi:type="string">
+                    MichalEclipse\DatacarriersCatalog\Model\ResourceModel\Datacarrier\Grid\Collection
+                </item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="MichalEclipse\DatacarriersCatalog\Model\ResourceModel\Datacarrier\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">michaleclipse_datacarrierscatalog_datacarrier</argument>
+            <argument name="eventPrefix" xsi:type="string">michaleclipse_datacarrierscatalog_datacarrier_grid_collection
+            </argument>
+            <argument name="eventObject" xsi:type="string">datacarrier_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">
+                MichalEclipse\DatacarriersCatalog\Model\ResourceModel\Datacarrier
+            </argument>
+        </arguments>
+    </type>
+</config>
